@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory-game</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="main-container">
+            <div class="controls-container">
+                <ul class="theme-btns">
+                    <li><button class="theme-btn btn1">light theme</button></li>
+                    <li><button class="theme-btn btn2">blue theme</button></li>
+                    <li><button class="theme-btn btn3">dark theme</button></li>
+                </ul>
+                <div class="player-monitor">
+                    <li><input class="player" type="text" placeholder="Enter player name..." autofocus></li>
+                    <li>
+                        <div id="square" class="counter"></div>
+                    </li>
+                </div>
+                <ul class="game-btns">
+                    <li><button class="game-btn new-game">new game</button></li>
+                    <li><button class="game-btn new-player">new player</button></li>
+                    <li><button class="game-btn game1">easy level</button></li>
+                    <li><button class="game-btn game2">normal level</button></li>
+                    <li><button class="game-btn game3">hard level</button></li>
+                </ul>
+            </div>
+
+            <div class="cards-container">
+                <h2 class="text-complit"></h2>
+                <div class="card" data-img="1">
+                    <img class="card-face" src="./assets/img/1.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="1">
+                    <img class="card-face" src="./assets/img/1.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="2">
+                    <img class="card-face" src="./assets/img/2.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="2">
+                    <img class="card-face" src="./assets/img/2.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="3">
+                    <img class="card-face" src="./assets/img/3.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="3">
+                    <img class="card-face" src="./assets/img/3.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="4">
+                    <img class="card-face" src="./assets/img/4.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="4">
+                    <img class="card-face" src="./assets/img/4.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="5">
+                    <img class="card-face" src="./assets/img/5.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="5">
+                    <img class="card-face" src="./assets/img/5.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="6">
+                    <img class="card-face" src="./assets/img/6.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card" data-img="6">
+                    <img class="card-face" src="./assets/img/6.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card normal-level" data-img="7">
+                    <img class="card-face" src="./assets/img/7.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card normal-level" data-img="7">
+                    <img class="card-face" src="./assets/img/7.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card normal-level" data-img="8">
+                    <img class="card-face" src="./assets/img/8.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card normal-level" data-img="8">
+                    <img class="card-face" src="./assets/img/8.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card hard-level" data-img="9">
+                    <img class="card-face" src="./assets/img/9.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card hard-level" data-img="9">
+                    <img class="card-face" src="./assets/img/9.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card hard-level" data-img="10">
+                    <img class="card-face" src="./assets/img/10.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+                <div class="card hard-level" data-img="10">
+                    <img class="card-face" src="./assets/img/10.png" alt="Card image">
+                    <img class="card-back" src="./assets/img/fish-icon.png" alt="Card image">
+                </div>
+            </div>
+
+            <div class="score-tables">
+                <h4 class="score-titles">HIGH SCORES</h4>
+                <ol id="high-scores" class="scores-table"></ol>
+                <button class="erase-high">erase high score</button>
+                <h4 class="score-titles">LAST SCORES</h4>
+                <ol id="last-scores" class="scores-table"></ol>
+                <button class="erase-last">erase last score</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-items">
+                <p class="footer-item">©</p>
+                <p class="footer-item">2022</p>
+                <a class="gh-logo" href="https://github.com/DenisWilk/"></a>
+            </div>
+            <a class="rss-logo" href="https://rs.school/js-stage0/"></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
