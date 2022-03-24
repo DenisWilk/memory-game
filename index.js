@@ -40,8 +40,8 @@ const highScores = 'highScores';
 const lastScores = 'lastScores';
 const dataHighScores = JSON.parse(localStorage.getItem(highScores)) ?? [];
 const dataLastScores = JSON.parse(localStorage.getItem(lastScores)) ?? [];
-const eraseHighScoreBtn = document.querySelector('.erase-high')
-const eraseLastScoreBtn = document.querySelector('.erase-last')
+const eraseHighScoreBtn = document.querySelector('.erase-high');
+const eraseLastScoreBtn = document.querySelector('.erase-last');
 
 
 
