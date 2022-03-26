@@ -208,7 +208,7 @@ function resetGame() {
 
     resetCounters();
     resetCards();
-    /* makeCardsRandom(); */
+    makeCardsRandom();
 
     if (player.value === '') player.focus();
 }
@@ -304,14 +304,14 @@ function resetCards() {
 }
 
 
-/* function makeCardsRandom() {
+function makeCardsRandom() {
 
     cards.forEach(card => {
         let cardPosition = Math.floor(Math.random() * 20);
         card.style.order = cardPosition;
     });
 }
-makeCardsRandom(); */
+makeCardsRandom();
 
 
 
